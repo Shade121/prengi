@@ -6,12 +6,15 @@
 
 * {
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
+
 @import 'blocks/header';
-// @import 'blocks/me';
-// @import 'blocks/buttons';
-// @import 'blocks/modal';
+@import 'blocks/promo';
+@import 'blocks/carousel';
+@import 'blocks/buttons';
+@import 'blocks/dots';
 // @import 'blocks/forms';
 // @import 'blocks/global';
 // @import 'base/media';

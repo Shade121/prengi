@@ -1,0 +1,52 @@
+.dots-castom {
+    position: absolute;
+    display: block;
+    bottom: 57px;
+    width: 100%;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    z-index: 5;
+    li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        button {
+            display: block;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            padding: 5px;
+            margin-top: 0;
+            cursor: pointer;
+            color: transparent;
+            border: 1px solid rgba(255, 255, 255, 1.0);;
+            outline: none;
+            background: transparent;
+            &:hover {
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:before {
+                font-family: 'slick';
+                font-size: 50px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 11px;
+                height: 11px;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+    .slick-active {
+        button {
+            background: rgba(255, 255, 255, 1.0);
+        }
+    }
+}
