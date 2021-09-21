@@ -1,0 +1,104 @@
+.industries {
+    position: relative;
+    margin-top: 81px;
+    width: 100%;
+    min-height: 889px;
+    background: url(../img/bg_women.webp) center (center / cover) no-repeat;
+    text-align: center;
+    &_title {
+        padding-top: 79px;
+        font-size: 30px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color:$text-color;
+    }
+    &_tabs  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 843px;
+        height: 65px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        list-style-type: none;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding-left: 0;
+    }
+    &_tab {
+        height: 49px;
+        border-right: 1px solid rgba(255,255,255, .5);
+        
+        &:last-child {
+            border: none;
+        } 
+         
+    }
+        
+    &_link {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        color: $text-color;
+        line-height: 49px;
+        margin: 0 25px 0 25px;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: none;
+            color: $active-color;
+        }
+        
+    }
+    
+    .mac {
+        margin-top: 35px;
+        &_carousel {
+            position: absolute;
+            top: 313px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        &_item {
+            img {
+                width: 696px;
+                height: 435px;
+            }
+        }
+        .slick {
+            &-list {
+                position: relative;
+                display: block;
+                overflow: hidden;
+            }
+            &-track {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &-arrow {
+                position: absolute;
+                top: 50%;
+                z-index: 1000;
+                background: transparent;
+                border: none;
+                outline: none;
+                img {
+                    width: 18px;
+                    height: 60px;
+                }
+            }
+            &-prev {
+                left: 10%;
+            } 
+            &-next {
+                right: 10%;
+            } 
+        }
+    }
+}

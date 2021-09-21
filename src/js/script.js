@@ -138,8 +138,16 @@ $(document).ready(function () {
         infinite: true,
         dotsClass: "dots-castom",
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev.png"></img></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/next.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/next.png"></img></button>',
     });
    
+    $('.mac_carousel').slick({
+        dots: false,
+        infinite: true,
+        fade: true,
+        cssEase: 'ease-in-out',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></img></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></img></button>',
+    });
 
 });
