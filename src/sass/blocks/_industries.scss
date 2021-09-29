@@ -1,8 +1,8 @@
 .industries {
-    position: relative;
+    // position: relative;
     margin-top: 81px;
     width: 100%;
-    min-height: 889px;
+    min-height: 890px;
     background: url(../img/bg_women.webp) center (center / cover) no-repeat;
     text-align: center;
     &_title {
@@ -32,11 +32,9 @@
     &_tab {
         height: 49px;
         border-right: 1px solid rgba(255,255,255, .5);
-        
         &:last-child {
             border: none;
         } 
-         
     }
         
     &_link {
@@ -47,19 +45,40 @@
         line-height: 49px;
         margin: 0 25px 0 25px;
         text-decoration: none;
-        
         &:hover {
             text-decoration: none;
             color: $active-color;
         }
-        
     }
-    
+    &_item {
+        display: none;
+        &-active {
+            display: block;
+            margin: 15px auto;
+            width: 843px;
+            border: 1px solid #fff;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            color: $text-color;
+            text-align: initial;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, .56);
+            overflow-y: hidden;
+        }
+    }
+    &_back  {
+        display: block;
+        margin-top: 10px;
+    }
     .mac {
-        margin-top: 35px;
+        position: relative;
+        &_wrapper {
+            margin-top: 35px;
+        }
         &_carousel {
             position: absolute;
-            top: 313px;
+            top: 37px;
             left: 0;
             width: 100%;
             z-index: 1;
@@ -94,10 +113,10 @@
                 }
             }
             &-prev {
-                left: 10%;
+                left: 5%;
             } 
             &-next {
-                right: 10%;
+                right: 5%;
             } 
         }
     }

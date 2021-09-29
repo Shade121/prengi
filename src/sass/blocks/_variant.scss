@@ -1,0 +1,69 @@
+.variant {
+    &_wrapper {
+        display: flex;
+        width: 100%;
+    }
+    &_subtitle {
+        font-size: 30px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.73;
+        letter-spacing: normal;
+        text-align: right;
+        text-transform: uppercase;
+        color: $text-color;
+        padding-right: 82px;
+        margin-bottom: 20px;
+        
+    }
+    &_descr {
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: right;
+        color: $text-color;
+        padding-right: 82px;
+    }
+    &_cloud {
+        position: relative;
+        width: 50%;
+        &-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+        }        
+    }
+    &_server {
+        position: relative;
+        width: 50%;
+        &-wrapper {
+            position: absolute;
+            top: 50%;
+            right: 15%;
+        }       
+    }
+    img {
+        width: 100%;
+    }
+    .server {
+        text-align: left;
+        padding: 0 0 0 82px;
+        &_square {
+            left: 43px;
+        }
+    }
+    &_square {
+        position: absolute;
+        top: 50%;
+        right: 43px;
+        transform: translateY(-25%);
+        width: 167px;
+        height: 167px;
+        opacity: 0.3;
+        background-color: $accent-color;
+    }
+}
