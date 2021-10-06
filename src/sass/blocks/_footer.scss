@@ -29,6 +29,9 @@
     &_list {
         list-style-type: none;
         padding: 0;
+        &-mt {
+            margin-top: -15px;
+        }
         
     }
     a {

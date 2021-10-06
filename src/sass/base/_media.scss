@@ -104,7 +104,9 @@
     }
     .modules {
         &_title {
-            font-size: 37px;
+            h2 {
+                font-size: 37px;
+            }
         }
     }
     .industries {
@@ -183,6 +185,11 @@
         
         &_modules {
             margin-bottom: 30px;
+        }
+        &_list {
+            &-mt {
+                margin-top: 0;
+            }
         }
     }
 }
@@ -308,7 +315,6 @@
     }
     .industries {
         margin-top: 30px;
-        min-height: auto;
         &_item {
             &-active {
                 width: 540px;
@@ -391,6 +397,13 @@
     .access {
         &_title {
             font-size: 22px;
+        }
+    }
+    .footer {
+        &_list {
+            &-mt {
+                margin-top: -15px;
+            }
         }
     }
 }
