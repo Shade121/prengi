@@ -20,9 +20,9 @@
         padding: 176px 50px 36px 50px;
         z-index: 3;
     }
-    &_img {
-        z-index: 2;
-    }
+    // &_img {
+    //     z-index: 2;
+    // }
     &_arrow {
         display: flex;
         flex-direction: column;
@@ -38,6 +38,7 @@
     }
     &_title {
         font-size: 48px;
+        font-weight: bold;
         text-align: center;
         margin: 33px 0 37px 0;
         color: #393939;

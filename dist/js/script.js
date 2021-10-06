@@ -1,36 +1,7 @@
 $(document).ready(function () {
 
     'use strict';
-
-    //mobile-menu
-    $('.hamburger').on('click', function () {
-        $('.mobile, .hamburger').toggleClass('active');
     
-    });
-    $('.mobile ul li a').on('click', function () {
-        $('.mobile, .hamburger').removeClass('active');
-    });
-
-    //   scroll to anchor
-    $('.navbar ul li a[href*="#"], .mobile ul li a[href*="#"]').on('click',
-        function (event) {
-            event.preventDefault();
-            const margin = $('.header').outerHeight();
-            const anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top - margin
-            }, 300);
-            return false;
-        });
-
-    // // Portfolio modal
-    // $('#portfolio-modal').on('show.bs.modal', function (event) {
-    //     const button = $(event.relatedTarget);
-    //     const workName = button.data('name');
-    //     $(this).find('.modal-body').hide();
-    //     $('.modal-body[data-name = ' + workName + ']').show();
-    // });
-
     // Modal contacts
     $('[data-modal=consultation]').on('click', function () {
         $('.overlay, #consultation').fadeIn('slow');
@@ -74,7 +45,7 @@ $(document).ready(function () {
 
     valideForms('#consultation form'),
 
-    $('input[name=phone]').mask("+38 (999) 999-99-99");
+        $('input[name=phone]').mask("+38 (999) 999-99-99");
 
     // PHP mailer
     $('form').submit(function (e) {
@@ -92,54 +63,49 @@ $(document).ready(function () {
         return false;
     });
 
-    $('ul.industries_tabs').on('click', 'li:not(.industries_tab-active)', function() {
+    // active-tabs    
+    $('ul.industries_tabs, ul.dropdown-menu').on('click', 'li:not(.industries_tab-active)', function () {
         $(this)
-          .addClass('industries_tab-active').siblings().removeClass('industries_tab-active')
-          .closest('div.container').find('div.industries_item').removeClass('industries_item-active').eq($(this).index()).addClass('industries_item-active');
-      });
-    
-      function toggleSlide(item) {
-        $(item).each(function(i){
-          $(this).on('click', function(e){
-            e.preventDefault();
-            $('.industries_item').eq(i).toggleClass('industries_item-active');
-          });
-        });
-      }
-      toggleSlide('.industries_link');
-      toggleSlide('.button_mini');
-    
-    // pageup
+            .addClass('industries_tab-active').siblings().removeClass('industries_tab-active')
+            .closest('div.container').find('div.industries_item').removeClass('industries_item-active').eq($(this).index()).addClass('industries_item-active');
+    });
 
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 700){
+    function toggleSlide(item) {
+        $(item).each(function (i) {
+            $(this).on('click', function (e) {
+                e.preventDefault();
+                $('.industries_item').eq(i).toggleClass('industries_item-active');
+            });
+        });
+    }
+    toggleSlide('.industries_link');
+    toggleSlide('.button_mini');
+
+    // pageup
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 700) {
             $('.up').fadeIn();
         } else {
             $('.up').fadeOut();
         }
     });
 
-    function wowInit() {
-        const scrollingAnimations = true; // Set false for turn off animation
-        if (scrollingAnimations) {
-            $(window).on('load', function () {
-                setTimeout(function () {
-                    new WOW().init();
-                }, 400);
-            });
-        }
-    }
-    wowInit();
-
-
+    // promo-carousel
     $('.carousel').slick({
         dots: true,
         infinite: true,
         dotsClass: "dots-castom",
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/next.png"></button>',
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+                arrows: false,
+            }
+        }]
     });
-   
+
+    // industries-carousel
     $('.mac_carousel').slick({
         dots: false,
         infinite: true,
@@ -147,6 +113,17 @@ $(document).ready(function () {
         cssEase: 'ease-in-out',
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
+
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    dotsClass: "dots-castom"
+                }
+            }
+        ]
     });
 
 });

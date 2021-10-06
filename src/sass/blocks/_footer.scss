@@ -1,0 +1,64 @@
+.footer {
+    padding: 50px 0 40px 0;
+    min-height: 497px;
+    background-color: rgb(0, 130, 161);
+    &_company{
+        margin-right: 80px;
+    }
+    &_title {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: left;
+        color: $text-color;
+    }
+    &_descr {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: left;
+        color: $text-color;
+    }
+    &_list {
+        list-style-type: none;
+        padding: 0;
+        
+    }
+    a {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: left;
+        color: $text-color;
+        text-decoration: none;
+    }
+    hr  {
+        margin-top: 44px;
+        color: $text-color;
+        opacity: 0.3;
+    }
+    .col-lg-3 {
+        padding: 0;
+    }
+    address {
+        margin-top: 36px;
+        font-size: 13px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.31;
+        letter-spacing: normal;
+        text-align: center;
+        color: $text-color;
+    }
+}

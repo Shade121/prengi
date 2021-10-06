@@ -1,5 +1,4 @@
 .industries {
-    // position: relative;
     margin-top: 81px;
     width: 100%;
     min-height: 890px;
@@ -119,5 +118,8 @@
                 right: 5%;
             } 
         }
+    }
+    .dropdown {
+        display: none;
     }
 }

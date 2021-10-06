@@ -8,7 +8,7 @@
     
     &_wrapper {
         display: flex;
-        margin-right: 33px;
+        margin-right: 20px;
         &:last-child {
             margin-right: 0;
         }
@@ -42,4 +42,6 @@
         text-decoration: none;
     }
 }
-
+.btn-group {
+    display: none;
+}
