@@ -95,8 +95,8 @@ $(document).ready(function () {
         dots: true,
         infinite: true,
         dotsClass: "dots-castom",
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/next.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/prev.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/next.png"></button>',
         responsive: [{
             breakpoint: 991,
             settings: {
@@ -111,8 +111,8 @@ $(document).ready(function () {
         infinite: true,
         fade: true,
         cssEase: 'ease-in-out',
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/right.png"></button>',
 
         responsive: [
             {
